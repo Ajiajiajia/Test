@@ -114,7 +114,7 @@ class MyForm extends Component {
               )}
               {/* 显示form内容，先遍历出每一行，然后在行中遍历出每一个控件 */}
               {contentArr.map((line, lineIndex) => {
-                {/* 遍历出每一个控件 */}
+                { /* 遍历出每一个控件 */ }
                 return (
                   <div key={lineIndex} className='myform-line'>
                     {line.length > 3 && new Error('一行最多只能有三个控件')}
