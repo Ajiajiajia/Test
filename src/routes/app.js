@@ -5,9 +5,9 @@ import NotFound from './404'
 import dynamic from 'dva/dynamic'
 import Layout from 'components/Layout'
 import DemoPage from './demo/index'
-import QywbgsxxPage from './qywbgsxx/index'
-import QyjcxxPage from './qyjcxx/index'
-import QyjbxxPage from './qyjbxx/index'
+import QywbgsxxPage from './t_qyjbxx_wbgs/index'
+import QyjcxxPage from './t_qyjbxx_jcjl/index'
+import QyjbxxPage from './t_qyjbxx/index'
 import path, {namesMap} from 'routerForm'
 const {HomePage, AsyncPage, Page404} = namesMap
 
