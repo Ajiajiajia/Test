@@ -2,10 +2,10 @@ import {Component} from 'react'
 import MyForm from '../../components/Form/index'
 import FormConfig from './config/form.config'
 
-export default class TestComponent extends Component {
+export default class QywbgsxxComponent extends Component {
   render () {
     return (
-      <div className='demo'>
+      <div className='qywbgsxx'>
         <MyForm config={FormConfig} />
       </div>
     )
