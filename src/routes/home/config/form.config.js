@@ -124,9 +124,22 @@ export default {
           control: {
             name: 'TextArea',
             size: 'small',
-            placeholder: '请输入信息',
+            placeholder: '请输入信息'
           },
           varName: 'rangnedaa',
+          label: '时间1',
+          rules: [
+            {required: true, message: '必选'}
+          ]
+        },
+        {
+          control: {
+            name: 'searchSelect',
+            size: 'small',
+            placeholder: '请输入信息',
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
+          },
+          varName: 'rangnedaaa',
           label: '时间1',
           rules: [
             {required: true, message: '必选'}
