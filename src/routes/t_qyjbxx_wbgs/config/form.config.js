@@ -104,7 +104,8 @@ export default {
           label: '联系电话',
           rules: [
             {required: true, message: '联系电话必填'},
-            {max: 40, message: '最大长度不允许超过40'}
+            {max: 40, message: '最大长度不允许超过40'},
+            {pattern: /^[0-9]*$/, message: '请输入正确的电话号码'}
           ]
         }
       ],

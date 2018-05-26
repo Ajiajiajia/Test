@@ -107,7 +107,8 @@ export default {
           label: '联系电话(固话)',
           rules: [
             {required: true, message: '联系电话(固话)必填'},
-            {max: 50, message: '最大长度不允许超过50'}
+            {max: 50, message: '最大长度不允许超过50'},
+            {pattern: /^[0-9]*$/, message: '请输入正确的电话号码'}
           ]
         },
         {
@@ -121,7 +122,8 @@ export default {
           label: '联系电话(手机)',
           rules: [
             {required: true, message: '联系电话(手机)必填'},
-            {max: 50, message: '最大长度不允许超过50'}
+            {max: 50, message: '最大长度不允许超过50'},
+            {pattern: /^[1][3,4,5,7,8][0-9]{9}$/, message: '请输入正确的手机号码'}
           ]
         }
       ],

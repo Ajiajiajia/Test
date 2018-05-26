@@ -3,10 +3,10 @@ import MyForm from '../../components/Form/index'
 import FormConfig from './config/form.config'
 import './index.less'
 
-export default class QyjcxxComponent extends Component {
+export default class XmYrzxxComponent extends Component {
   render () {
     return (
-      <div className='qyjcxx'>
+      <div className='xm_yrzxx'>
         <MyForm config={FormConfig} />
       </div>
     )
