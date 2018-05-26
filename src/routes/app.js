@@ -38,11 +38,12 @@ const App = (props) => {
         //企业模块
         <Route path='/qywbxmxx' component={qywbxmxxPage} /> // 企业外埠项目信息
         <Route path='/qyzzxx' component={qyzzxxPage} /> // 企业奖惩信息
-        <Route path='/qynsxx' component={QynsxxPage} /> //企业纳税信息
-        <Route path='/qyglry' component={QyglryPage} /> //企业管理人员
+        <Route path='/qynsxx' component={QynsxxPage} /> //企业纳税信息 -Ajiajia
+        <Route path='/qyglry' component={QyglryPage} /> //企业管理人员 -Ajiajia
         <Route path='/qywbgsxx' component={QywbgsxxPage} /> // 企业公司外包信息 payaso
         <Route path='/qyjcxx' component={QyjcxxPage} /> // 企业奖惩信息 payaso
         <Route path='/qyjbxx' component={QyjbxxPage} /> // 企业基本信息 payaso
+
         //项目模块
         <Route path='/sfbzndsf' component={sfbzndsfPage} /> // 项目——收费标准——年度收费
         <Route path='/ywhcy' component={ywhcyfPage} /> // 项目——业主情况——业委会成员
