@@ -36,8 +36,8 @@ const App = (props) => {
         <Route exact path='/' component={Homepage} />
         <Route path='/home' component={Homepage} />
         //企业模块
-        <Route path='/qywbxmxx' component={qywbxmxxPage} /> // 企业外埠项目信息
-        <Route path='/qyzzxx' component={qyzzxxPage} /> // 企业奖惩信息
+        <Route path='/qywbxmxx' component={qywbxmxxPage} /> // 企业外埠项目信息  by lszr
+        <Route path='/qyzzxx' component={qyzzxxPage} /> // 企业资质信息
         <Route path='/qynsxx' component={QynsxxPage} /> //企业纳税信息
         <Route path='/qyglry' component={QyglryPage} /> //企业管理人员
         <Route path='/qywbgsxx' component={QywbgsxxPage} /> // 企业公司外包信息
