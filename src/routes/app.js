@@ -8,6 +8,8 @@ import DemoPage from './demo/index'
 import qywbxmxxPage from './t_qyjbxx_wbxm/index'
 import qyzzxxPage from './t_qyjbxx_zzxx/index'
 import sfbzndsfPage from './t_xm_sfbz_ndsf/index'
+import ywhcyfPage from './t_xm_yzxx_ywhcy/index'
+import rypzPage from './t_xm_rypz/index'
 import path, { namesMap } from 'routerForm'
 
 const {HomePage, AsyncPage, Page404} = namesMap
@@ -23,6 +25,8 @@ const App = (props) => {
         <Route path='/qywbxmxx' component={qywbxmxxPage} />
         <Route path='/qyzzxx' component={qyzzxxPage} />
         <Route path='/sfbzndsf' component={sfbzndsfPage} />
+        <Route path='/ywhcy' component={ywhcyfPage} />
+        <Route path='/rypz' component={rypzPage} />
         <Route path={path(AsyncPage)} component={AsyncDemo} />
         <Route path={path(Page404)} component={NotFound} />
         <Redirect from='*' to='/404' />

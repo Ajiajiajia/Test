@@ -16,7 +16,6 @@ export default {
     content: {
       0: [
         {
-          key: 0,
           control: {
             name: 'input',
             type: 'text',
@@ -33,7 +32,6 @@ export default {
           ]
         },
         {
-          key: 1,
           control: {
             name: 'DatePicker',
             format: 'YYYY-MM-DD',

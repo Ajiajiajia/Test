@@ -16,7 +16,6 @@ export default {
     content: {
       0: [
         {
-          key: 0,
           control: {
             name: 'input',
             type: 'text',
@@ -34,7 +33,6 @@ export default {
         },
         {
 
-          key: 1,
           control: {
             name: 'input',
             type: 'text',
@@ -66,7 +64,6 @@ export default {
       1: [
         {
 
-          key: 0,
           control: {
             name: 'select',
             size: 'default',
@@ -102,7 +99,6 @@ export default {
         },
         {
 
-          key: 1,
           control: {
             name: 'input',
             type: 'text',
@@ -134,7 +130,6 @@ export default {
       ],
       2: [
         {
-          key: 0,
           control: {
             name: 'input',
             type: 'number',
@@ -152,7 +147,6 @@ export default {
         },
         {
 
-          key: 1,
           control: {
             name: 'input',
             type: 'number',
@@ -181,7 +175,6 @@ export default {
       '3': [
         {
 
-          key: 0,
           control: {
             name: 'input',
             type: 'text',
@@ -212,7 +205,6 @@ export default {
       4: [
         {
 
-          key: 0,
           control: {
             name: 'DatePicker',
             format: 'YYYY-MM-DD',
@@ -226,7 +218,6 @@ export default {
         },
         {
 
-          key: 1,
           control: {
             name: 'DatePicker',
             format: 'YYYY-MM-DD',
@@ -242,7 +233,6 @@ export default {
       5: [
         {
 
-          key: 0,
           control: {
             name: 'input',
             type: 'number',
@@ -261,7 +251,6 @@ export default {
         },
         {
 
-          key: 1,
           control: {
             name: 'input',
             type: 'text',
@@ -282,7 +271,6 @@ export default {
       6: [
         {
 
-          key: 0,
           control: {
             name: 'input',
             type: 'text',
@@ -301,7 +289,6 @@ export default {
         },
         {
 
-          key: 1,
           control: {
             name: 'input',
             type: 'text',
@@ -322,7 +309,6 @@ export default {
       7: [
         {
 
-          key: 0,
           control: {
             name: 'TextArea',
             type: 'text',

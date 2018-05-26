@@ -2,7 +2,7 @@ import {Component} from 'react'
 import axios from 'axios'
 import saveInTime from '../../utils/saveInTime'
 import config from '../../config/api'
-import {Card, Form, Input, DatePicker, Radio, Select, Checkbox, Button, message} from 'antd'
+import {Card, Form, Input, DatePicker, Radio, Select, Checkbox, Button, message, Spin} from 'antd'
 import './index.less'
 const FormItem = Form.Item
 const MonthPicker = DatePicker.MonthPicker
@@ -15,15 +15,35 @@ const {TextArea} = Input
 let formState = {value: 'resolve'}
 
 class MyForm extends Component {
+  state = {
+    searchData: [],
+    fetching: false
+  }
   componentDidMount () {
-    const {time, url, method} = config.save
-    saveInTime(time, formState, {url, axios, method}, message).call(this)
+    // const {time, url, method} = config.save
+    // saveInTime(time, formState, {url, axios, method}, message).call(this)
   }
   componentDidUpdate () {
     formState.value = 'pending'
   }
+  search ({url}) {
+    this.setState({fetching: true})
+    /* axios.get(url).then(res => {
+      switch (res.data.code) {
+      }
+    }) */
+    if (!url) {
+      throw new Error('没有传入url')
+    }
+    axios.get(url)
+      .then(res => {
+        this.setState({searchData: res.data, fetching: false})
+      }).catch(err => {
+        message.error(err.message || '发生错误')
+      })
+  }
   // 创建control
-  getControl ({type, size, name, placeholder, format, showTime = false, style, select = [], plainOptions = [], defaultCheckedList = []}) {
+  getControl ({type, size, name, placeholder, format, showTime = false, style, select = [], plainOptions = [], defaultCheckedList = [], selectSearch = {}}) {
     switch (name) {
     case 'input':
       return (
@@ -69,6 +89,20 @@ class MyForm extends Component {
       return (
         <TextArea placeholder={placeholder} autosize />
       )
+    case 'searchSelect':
+      return (
+        <Select
+          labelInValue
+          size={size}
+          placeholder={placeholder}
+          notFoundContent={this.state.fetching ? <Spin size='small' /> : null}
+          filterOption={false}
+          onFocus={() => { this.search(selectSearch) }}
+          style={{ width: '100%' }}
+        >
+          {this.state.searchData.map(d => <Option key={d.value}>{d.label}</Option>)}
+        </Select>
+      )
     default:
       throw new Error(`无法识别的控件名 ${name}`)
     }
@@ -76,7 +110,7 @@ class MyForm extends Component {
   // 创建label
   createLabel (label) {
     return (
-      <span style={{color: '#40a9ff'}}>{label}</span>
+      <span style={{color: '#40a9ff', display: 'inline-block', width: '100%', height: '100%', textAlign: 'left'}}>{label}</span>
     )
   }
   handleSubmit = (e) => {
@@ -131,11 +165,11 @@ class MyForm extends Component {
                       if (label === '' || label === void 0) {
                         throw new Error(`label 必填 ${index}`)
                       }
-                      const {name, type, size, defaultValue, placeholder, format, showTime, style, select, plainOptions, defaultCheckedList} = control
+                      const {name, type, size, defaultValue, placeholder, format, showTime, style, select, plainOptions, defaultCheckedList, selectSearch} = control
                       return (
                         <div
                           className='myform-control'
-                          style={line.length === 1 ? {width: '1000px'} : ([0, 1].includes(parseInt(key)) ? {marginRight: '40px'} : {})}
+                          style={line.length === 1 ? {width: '100%'} : ([0, 1].includes(parseInt(key)) ? {marginRight: '5%'} : {})}
                           key={key}>
                           <FormItem
                             labelCol={line.length === 1 ? {span: 2} : { span: 4 }}
@@ -145,7 +179,7 @@ class MyForm extends Component {
                               rules,
                               initialValue: defaultValue,
                               trigger
-                            })(this.getControl({type, name, size, placeholder, format, showTime, style, select, plainOptions, defaultCheckedList}))}
+                            })(this.getControl({type, name, size, placeholder, format, showTime, style, select, plainOptions, defaultCheckedList, selectSearch}))}
                           </FormItem>
                         </div>
                       )
