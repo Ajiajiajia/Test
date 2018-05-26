@@ -56,15 +56,10 @@ export default {
         },
         {
           control: {
-            name: 'select',
-            size: 'default',
+            name: 'searchSelect',
+            size: 'small',
             placeholder: '规划类型',
-            select: [
-              {
-                value: 'a',
-                label: '代码表拉取'
-              }
-            ]
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sghlx',
           label: '规划类型',
@@ -76,15 +71,10 @@ export default {
       2: [
         {
           control: {
-            name: 'select',
-            size: 'default',
+            name: 'searchSelect',
+            size: 'small',
             placeholder: '请选择项目类型',
-            select: [
-              {
-                value: 'a',
-                label: '代码表拉取'
-              }
-            ]
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sxmlx',
           label: '项目类型',
@@ -319,15 +309,10 @@ export default {
       9: [
         {
           control: {
-            name: 'select',
-            size: 'default',
+            name: 'searchSelect',
+            size: 'small',
             placeholder: '请选择住宅规模类型',
-            select: [
-              {
-                value: 'a',
-                label: '代码表拉取'
-              }
-            ]
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'szzgmlx',
           label: '住宅规模类型',
@@ -337,15 +322,10 @@ export default {
         },
         {
           control: {
-            name: 'select',
-            size: 'default',
+            name: 'searchSelect',
+            size: 'small',
             placeholder: '请选择非住宅规模类型',
-            select: [
-              {
-                value: 'a',
-                label: '代码表拉取'
-              }
-            ]
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sfzzgmlx',
           label: '非住宅规模类型',
@@ -357,15 +337,10 @@ export default {
       10: [
         {
           control: {
-            name: 'select',
+            name: 'searchSelect',
             size: 'default',
             placeholder: '请选择项目状态',
-            select: [
-              {
-                value: 'a',
-                label: '代码表拉取'
-              }
-            ]
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sxmzt',
           label: '项目状态',

@@ -6,56 +6,41 @@ export default {
       0: [
         {
           control: {
-            name: 'select',
+            name: 'searchSelect',
             size: 'default',
             placeholder: '收费类型',
-            select: [
-              {
-                value: 'a',
-                label: '代码表拉取'
-              }
-            ]
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sxmbh',
-          label: '选择',
+          label: '收费类型',
           rules: [
-            {}
+            {required: true, message: '必选'}
           ]
         }
       ],
       1: [
         {
           control: {
-            name: 'select',
+            name: 'searchSelect',
             size: 'default',
             placeholder: '规划类型',
-            select: [
-              {
-                value: 'a',
-                label: '代码表拉取'
-              }
-            ]
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sghlx',
-          label: '选择',
+          label: '规划类型',
           rules: [
             {required: true, message: '必选'}
           ]
         },
         {
           control: {
-            name: 'select',
+            name: 'searchSelect',
             size: 'default',
             placeholder: '房屋类型',
-            select: [
-              {
-                value: 'a',
-                label: '代码表拉取'
-              }
-            ]
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sfwlx',
-          label: '选择',
+          label: '房屋类型',
           rules: [
             {required: true, message: '必选'}
           ]

@@ -2,21 +2,9 @@ export default {
   '0': {
     key: 0,
     title: '企业管理人员',
-    /**
-     * 表单的内容
-     * type: 控件的类型
-     * placeholder: 占位标识
-     * varName: 对应的变量名
-     * defaultValue: 默认值
-     * label: 标签
-     * customVerify: 自定义校验，返回对象，传入的值为输入的值或者控件的值
-     * 对象中status可以是Boolean类型，status为true表示验证通过，false表示不通过，也可以为字符串'success', 'warning', 'error', 'validating'
-     * message为不通过显示的信息
-     */
     content: {
       0: [
         {
-          key: 0,
           control: {
             name: 'input',
             type: 'text',
@@ -33,7 +21,6 @@ export default {
           ]
         },
         {
-          key: 1,
           control: {
             name: 'select',
             size: 'default',
@@ -57,7 +44,6 @@ export default {
       ],
       1: [
         {
-          key: 0,
           control: {
             name: 'DatePicker',
             format: 'YYYY-MM-DD HH:mm:ss',
@@ -71,7 +57,6 @@ export default {
           ]
         },
         {
-          key: 1,
           control: {
             name: 'DatePicker',
             format: 'YYYY-MM-DD HH:mm:ss',
@@ -87,7 +72,6 @@ export default {
       ],
       2: [
         {
-          key: 0,
           control: {
             name: 'select',
             size: 'default',
@@ -137,16 +121,11 @@ export default {
           ]
         },
         {
-          key: 1,
           control: {
-            name: 'select',
+            name: 'searchSelect',
             size: 'default',
-            select: [
-              {
-                value: 'a',
-                label: '博士生'
-              }
-            ]
+            placeholder: '请选择现任职务',
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sxrzw',
           label: '现任职务',
@@ -155,9 +134,8 @@ export default {
           ]
         }
       ],
-      '3': [
+      3: [
         {
-          key: 0,
           control: {
             name: 'select',
             size: 'default',
@@ -207,7 +185,6 @@ export default {
           ]
         },
         {
-          key: 0,
           control: {
             name: 'select',
             size: 'default',
@@ -237,9 +214,8 @@ export default {
           ]
         }
       ],
-      '4': [
+      4: [
         {
-          key: 0,
           control: {
             name: 'input',
             type: 'text',
@@ -255,9 +231,8 @@ export default {
           ]
         }
       ],
-      '5': [
+      5: [
         {
-          key: 0,
           control: {
             name: 'input',
             type: 'text',
@@ -273,7 +248,6 @@ export default {
           ]
         },
         {
-          key: 1,
           control: {
             name: 'input',
             type: 'text',
@@ -289,9 +263,8 @@ export default {
           ]
         }
       ],
-      '6': [
+      6 : [
         {
-          key: 0,
           control: {
             name: 'select',
             size: 'default',
@@ -309,7 +282,6 @@ export default {
           ]
         },
         {
-          key: 1,
           control: {
             name: 'input',
             type: 'text',
@@ -325,9 +297,8 @@ export default {
           ]
         }
       ],
-      '7': [
+      7: [
         {
-          key: 0,
           control: {
             name: 'input',
             type: 'text',
@@ -343,9 +314,8 @@ export default {
           ]
         }
       ],
-      '8': [
+      8: [
         {
-          key: 0,
           control: {
             name: 'input',
             type: 'text',
