@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  //background-color: #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  .header {
+    background-color: #2276DA;
+  }
+  .logo {
+    display: inline;
+    float: left;
+  }
+  .ant-layout {
+    height: 100%;
+  }
+  .Layout-sider {
+    background-color: #C4DFFF;
+    text-align: left;
+    height: 100%;
+  }
+  .Layout-top-title {
+    float: left;
+    padding-left: 30px;
+    display: inline;
+    color: #fff;
+    font-size: 22px;
+  }
+  .Layout-top-user {
+    float: right;
+    font-size: 18px;
+    color: #fff;
+  }
+  .nav-text {
+    font-size: 16px;
+    color: #2276DA;
+  }
+  &-side {
+    height: 100%;
+    background-color: #ccc;
+  }
+  &-content {
+    flex-grow: 1;
+    overflow: auto;
+  }
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected
+{
+  background-color: #F3F3F3;
+}
