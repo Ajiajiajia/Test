@@ -42,14 +42,13 @@ const App = (props) => {
         <Route path='/sfbzndsf' component={sfbzndsfPage} />
         <Route path='/ywhcy' component={ywhcyfPage} />
         <Route path='/rypz' component={rypzPage} />
-        <Route path='/qynsxx' component={QynsxxPage} />
-        <Route path='/qyglry' component={QyglryPage} />
+        <Route path='/qynsxx' component={QynsxxPage} /> //企业纳税信息
+        <Route path='/qyglry' component={QyglryPage} /> //企业管理人员
         <Route path='/test' component={TestPage} />
         <Route path='/qwqw' component={QwqwPage} />
-        <Route path='/sfbzsfxz' component={SfbzsfxzPage} />
-        <Route path='/xmyzxx' component={XmyzxxPage} />
-        <Route path='/xmjbxx' component={XmjbxxPage} />
-
+        <Route path='/sfbzsfxz' component={SfbzsfxzPage} /> //项目——收费标准——细则
+        <Route path='/xmyzxx' component={XmyzxxPage} />   // 项目——业主情况
+        <Route path='/xmjbxx' component={XmjbxxPage} /> //项目——基本信息
 
         <Route path='/qywbgsxx' component={QywbgsxxPage} /> // 企业公司外包信息
         <Route path='/qyjcxx' component={QyjcxxPage} /> // 企业奖惩信息
