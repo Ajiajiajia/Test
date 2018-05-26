@@ -4,7 +4,23 @@ import Homepage from './home'
 import NotFound from './404'
 import dynamic from 'dva/dynamic'
 import Layout from 'components/Layout'
-import DemoPage from './demo/index'
+import QywbgsxxPage from './t_qyjbxx_wbgs/index'
+import QyjcxxPage from './t_qyjbxx_jcjl/index'
+import QyjbxxPage from './t_qyjbxx/index'
+import XmsfbzPage from './t_xm_sfbz/index'
+import XmRypzZygsPage from './t_xm_rypz_zygs/index'
+import XmRypzXmjlPage from './t_xm_rypz_xmjl/index'
+import XmYrzxxLbflPage from './t_xm_yrzxx_lbfl/index'
+import XmYrzxxPage from './t_xm_yrzxx/index'
+import SearchPage from './search'
+import QynsxxPage from './t_qyjbxx_nsxx/index'
+import QyglryPage from './t_qyjbxx_glry/index'
+import XmyzxxPage from './t_xm_yzxx/index'
+import SfbzsfxzPage from './t_xm_sfbz_sfxz/index'
+import XmjbxxPage from './t_xm_jbxx/index'
+
+import TestPage from './test'
+import QwqwPage from './qwqw'
 import qywbxmxxPage from './t_qyjbxx_wbxm/index'
 import qyzzxxPage from './t_qyjbxx_zzxx/index'
 import sfbzndsfPage from './t_xm_sfbz_ndsf/index'
@@ -21,12 +37,29 @@ const App = (props) => {
       <Switch>
         <Route exact path='/' component={Homepage} />
         <Route path='/home' component={Homepage} />
-        <Route path='/demo' component={DemoPage} />
         <Route path='/qywbxmxx' component={qywbxmxxPage} />
         <Route path='/qyzzxx' component={qyzzxxPage} />
         <Route path='/sfbzndsf' component={sfbzndsfPage} />
         <Route path='/ywhcy' component={ywhcyfPage} />
         <Route path='/rypz' component={rypzPage} />
+        <Route path='/qynsxx' component={QynsxxPage} />
+        <Route path='/qyglry' component={QyglryPage} />
+        <Route path='/test' component={TestPage} />
+        <Route path='/qwqw' component={QwqwPage} />
+        <Route path='/sfbzsfxz' component={SfbzsfxzPage} />
+        <Route path='/xmyzxx' component={XmyzxxPage} />
+        <Route path='/xmjbxx' component={XmjbxxPage} />
+
+
+        <Route path='/qywbgsxx' component={QywbgsxxPage} /> // 企业公司外包信息
+        <Route path='/qyjcxx' component={QyjcxxPage} /> // 企业奖惩信息
+        <Route path='/qyjbxx' component={QyjbxxPage} /> // 企业基本信息
+        <Route path='/xmsfbz' component={XmsfbzPage} /> // 项目收费标准
+        <Route path='/xmrypzzygs' component={XmRypzZygsPage} /> // 项目人员配置-聘用专业公司
+        <Route path='/xmrypzxmjl' component={XmRypzXmjlPage} /> // 项目人员配置-项目经理
+        <Route path='/xmyrzxxlbfl' component={XmYrzxxLbflPage} /> // 项目——已入住信息——按类别分类
+        <Route path='/xmyrzxx' component={XmYrzxxPage} /> // 项目——已入住信息
+        <Route path='/search' component={SearchPage} />
         <Route path={path(AsyncPage)} component={AsyncDemo} />
         <Route path={path(Page404)} component={NotFound} />
         <Redirect from='*' to='/404' />
