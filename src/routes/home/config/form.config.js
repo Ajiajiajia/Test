@@ -135,7 +135,7 @@ export default {
         {
           control: {
             name: 'searchSelect',
-            size: 'small',
+            size: 'default',
             placeholder: '请输入信息',
             selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },

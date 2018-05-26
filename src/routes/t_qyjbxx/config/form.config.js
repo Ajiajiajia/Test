@@ -167,10 +167,12 @@ export default {
       '5': [
         {
           control: {
-            name: 'input',
+
+            name: 'searchSelect',
             size: 'default',
-            type: 'text',
-            placeholder: '请输入行政区划'
+            placeholder: '请输入行政区划',
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
+
           },
           varName: 'sxzqh',
           label: '行政区划',
@@ -279,10 +281,10 @@ export default {
         },
         {
           control: {
-            name: 'input',
-            type: 'text',
+            name: 'searchSelect',
             size: 'default',
-            placeholder: '请输入登记注册类型'
+            placeholder: '请输入登记注册类型',
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sdjzclx',
           label: '登记注册类型',

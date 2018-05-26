@@ -6,11 +6,10 @@ export default {
       '0': [
         {
           control: {
-            name: 'input',
-            type: 'text',
+            name: 'searchSelect',
             size: 'default',
             placeholder: '请输入外包类别',
-            style: {}
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'swblb',
           label: '外包类别',

@@ -73,10 +73,10 @@ export default {
       '2': [
         {
           control: {
-            name: 'input',
-            type: 'text',
+            name: 'searchSelect',
             size: 'default',
-            placeholder: '请输入奖惩级别'
+            placeholder: '请输入奖惩级别',
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sjcjb',
           label: '奖惩级别',

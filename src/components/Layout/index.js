@@ -4,6 +4,7 @@
 import React from 'react'
 import './index.less'
 import { Layout, Menu, Icon, Breadcrumb} from 'antd'
+import { Link } from 'dva/router'
 import logo from '../../images/logo_white.png'
 const { Header, Content, Footer, Sider } = Layout
 // import path, {namesMap} from 'routerForm/index'
@@ -24,7 +25,7 @@ const LayoutContent = (props) => (
             物业管理行政监管信息系统
           </div>
           <div className='Layout-top-user'>
-            首页  &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;       <Icon type='user' />&nbsp;用户
+            首页  &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp; <Icon type='user' />&nbsp;用户
           </div>
         </Header>
         <Layout>
@@ -34,8 +35,10 @@ const LayoutContent = (props) => (
               defaultSelectedKeys={['4']}
               style={{backgroundColor: '#C4DFFF'}} >
               <Menu.Item key='1'>
-                <Icon type='user' />
-                <span className='nav-text'>物业项目基本信息</span>
+                <Link to='/sfbzsfxz'>
+                  <Icon type='user' />
+                  <span className='nav-text'>物业项目基本信息</span>
+                </Link>
               </Menu.Item>
               <Menu.Item key='2'>
                 <Icon type='video-camera' />
