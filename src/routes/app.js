@@ -38,8 +38,8 @@ const App = (props) => {
         //企业模块
         <Route path='/qywbxmxx' component={qywbxmxxPage} /> // 企业外埠项目信息
         <Route path='/qyzzxx' component={qyzzxxPage} /> // 企业奖惩信息
-        <Route path='/qynsxx' component={QynsxxPage} /> //企业纳税信息
-        <Route path='/qyglry' component={QyglryPage} /> //企业管理人员
+        <Route path='/qynsxx' component={QynsxxPage} /> //企业纳税信息 -Ajiajia
+        <Route path='/qyglry' component={QyglryPage} /> //企业管理人员 -Ajiajia
         <Route path='/qywbgsxx' component={QywbgsxxPage} /> // 企业公司外包信息
         <Route path='/qyjcxx' component={QyjcxxPage} /> // 企业奖惩信息
         <Route path='/qyjbxx' component={QyjbxxPage} /> // 企业基本信息
@@ -47,9 +47,9 @@ const App = (props) => {
         <Route path='/sfbzndsf' component={sfbzndsfPage} /> // 项目——收费标准——年度收费
         <Route path='/ywhcy' component={ywhcyfPage} /> // 项目——业主情况——业委会成员
         <Route path='/rypz' component={rypzPage} /> // 项目——人员配置
-        <Route path='/sfbzsfxz' component={SfbzsfxzPage} /> //项目——收费标准——细则
-        <Route path='/xmyzxx' component={XmyzxxPage} />   // 项目——业主情况
-        <Route path='/xmjbxx' component={XmjbxxPage} /> //项目——基本信息
+        <Route path='/sfbzsfxz' component={SfbzsfxzPage} /> //项目——收费标准——细则   -Ajiajia
+        <Route path='/xmyzxx' component={XmyzxxPage} />   // 项目——业主情况 -Ajiajia
+        <Route path='/xmjbxx' component={XmjbxxPage} /> //项目——基本信息    -Ajiajia
         <Route path='/xmsfbz' component={XmsfbzPage} /> // 项目收费标准
         <Route path='/xmrypzzygs' component={XmRypzZygsPage} /> // 项目人员配置-聘用专业公司
         <Route path='/xmrypzxmjl' component={XmRypzXmjlPage} /> // 项目人员配置-项目经理
