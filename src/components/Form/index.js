@@ -146,14 +146,14 @@ class MyForm extends Component {
           const {title = false, key = index, content = {}} = item
           const contentArr = Array.from(content)
           return (
-            <Card key={key} style={{overflowX: 'auto', marginTop: '10px', textAlign: 'left', display: 'flex', flexDirection: 'column'}}>
+            <Card key={key} style={{overflowX: 'auto', marginTop: index === 0 ? '0' : '10px', textAlign: 'left', display: 'flex', flexDirection: 'column'}}>
               {/* 显示标题 */}
               {title && (
                 <div className='myform-title'>{title}</div>
               )}
               {/* 显示form内容，先遍历出每一行，然后在行中遍历出每一个控件 */}
               {contentArr.map((line, lineIndex) => {
-                { /* 遍历出每一个控件 */ }
+                {/* 遍历出每一个控件 */}
                 return (
                   <div key={lineIndex} className='myform-line'>
                     {line.length > 2 && new Error('一行最多只能有两个控件')}
