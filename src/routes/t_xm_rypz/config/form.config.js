@@ -66,29 +66,37 @@ export default {
         },
         {
           control: {
-            name: 'select',
+            name: 'searchSelect',
             size: 'default',
-            select: [
-              {
-                value: '党员',
-                label: '党员'
-              },
-              {
-                value: '群众',
-                label: '群众'
-              },
-              {
-                value: '团员',
-                label: '团员'
-              },
-              {
-                value: '其他',
-                label: '其他'
-              }
-            ]
+            placeholder: '请选择物业服务企业与开发建设单位关系',
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
-          varName: 'szzmm',
+          varName: 'swyqyyjsdwgx',
           label: '物业服务企业与开发建设单位关系'
+          // control: {
+          //   name: 'select',
+          //   size: 'default',
+          //   select: [
+          //     {
+          //       value: '党员',
+          //       label: '党员'
+          //     },
+          //     {
+          //       value: '群众',
+          //       label: '群众'
+          //     },
+          //     {
+          //       value: '团员',
+          //       label: '团员'
+          //     },
+          //     {
+          //       value: '其他',
+          //       label: '其他'
+          //     }
+          //   ]
+          // },
+          // varName: 'swyqyyjsdwgx',
+          // label: '物业服务企业与开发建设单位关系'
         }
       ],
       2: [

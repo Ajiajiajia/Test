@@ -6,11 +6,10 @@ export default {
       '0': [
         {
           control: {
-            name: 'input',
-            type: 'text',
+            name: 'searchSelect',
             size: 'default',
             placeholder: '请输入规划类型',
-            style: {}
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sghlx',
           label: '规划类型',
@@ -21,11 +20,10 @@ export default {
         },
         {
           control: {
-            name: 'input',
-            type: 'text',
+            name: 'searchSelect',
             size: 'default',
             placeholder: '请输入房屋类型',
-            style: {}
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sfwlx',
           label: '房屋类型',

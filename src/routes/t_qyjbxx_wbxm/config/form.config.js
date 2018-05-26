@@ -32,19 +32,16 @@ export default {
           ]
         },
         {
-
           control: {
-            name: 'input',
-            type: 'text',
+            name: 'searchSelect',
             size: 'default',
             placeholder: '请输入所属区划',
-            defaultValue: '',
-            style: {}
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
           varName: 'sssqh',
           label: '所属区划',
           rules: [
-            {type: 'string', required: true, message: '请输入所属区划'}
+            {required: true, message: '请输入所属区划'}
           ]
           // key: 1,
           // control: {
@@ -65,25 +62,37 @@ export default {
         {
 
           control: {
-            name: 'select',
+            name: 'searchSelect',
             size: 'default',
             placeholder: '请选择规划类型',
-            select: [
-              {
-                value: 'a',
-                label: 'A'
-              },
-              {
-                value: 'b',
-                label: 'B'
-              }
-            ]
+            selectSearch: {url: 'http://192.168.1.5:3000/xialalie/test', method: 'get'}
           },
-          varName: 'sghlx',
+          varName: 'sssqh',
           label: '规划类型',
           rules: [
-            {required: true, message: '必填'}
+            {required: true, message: '请输入所属区划'}
           ]
+
+          // control: {
+          //   name: 'select',
+          //   size: 'default',
+          //   placeholder: '请选择规划类型',
+          //   select: [
+          //     {
+          //       value: 'a',
+          //       label: 'A'
+          //     },
+          //     {
+          //       value: 'b',
+          //       label: 'B'
+          //     }
+          //   ]
+          // },
+          // varName: 'sghlx',
+          // label: '规划类型',
+          // rules: [
+          //   {required: true, message: '必填'}
+          // ]
           // key: 0,
           // control: {
           //   name: 'MonthPicker',
@@ -115,7 +124,7 @@ export default {
           // key: 1,
           // control: {
           //   name: 'RangePicker',
-          //   size: 'small',
+          //   size: 'default',
           //   placeholder: '请输入信息',
           //   showTime: true,
           //   format: 'YYYY-MM-DD HH:mm:ss',
@@ -160,7 +169,7 @@ export default {
           // key: 1,
           // control: {
           //   name: 'checkBox',
-          //   size: 'small',
+          //   size: 'default',
           //   placeholder: '请输入信息',
           //   plainOptions: ['Apple', 'Pear', 'Orange'],
           //   defaultValue: ['Apple', 'Orange']
@@ -192,7 +201,7 @@ export default {
 
           // control: {
           //   name: 'TextArea',
-          //   size: 'small',
+          //   size: 'default',
           //   placeholder: '请输入信息',
           // },
           // varName: 'rangnedaa',
